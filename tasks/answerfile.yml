@@ -1,0 +1,6 @@
+---
+- name: "Copy Ansible file to system"
+  template:
+    src: /templates/gpe-agent-comm.answer.j2
+    dest: {{ galileo_ansible_role_answerfile_path }}
+  notify: Cleanup Answer File

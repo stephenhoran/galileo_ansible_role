@@ -1,3 +1,6 @@
 ---
 # Included tasks for galileo_ansible_role
 - include_tasks: validate.yml
+- include_tasks: answerfile.yml
+- include_tasks: yum.yml
+- include_tasks: registration.yml

@@ -4,3 +4,8 @@
   file:
     path: '{{ galileo_ansible_role_rpm_path }}/{{ galileo_ansible_role_comm_rpm_file }}'
     state: absent
+
+- name: "Cleanup Answer File"
+  file:
+    path: '/tmp/gpe-agent-comm.answer'
+    state: absent

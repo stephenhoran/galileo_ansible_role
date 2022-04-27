@@ -1,0 +1,4 @@
+---
+- name: "Registering Galileo Comm Agent"
+  command:
+    cmd: /opt/galileo/bin/gpe-agent-comm add_service --file {{ galileo_ansible_role_answerfile_path }}
