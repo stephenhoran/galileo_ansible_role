@@ -1,0 +1,5 @@
+---
+# defaults file for galileo_ansible_role
+galileo_ansible_role_ignore_repo: yes
+galileo_ansible_role_rpm_path: ''
+galileo_ansible_role_comm_rpm_file: ''

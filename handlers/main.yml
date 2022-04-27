@@ -1,0 +1,6 @@
+---
+# handlers file for galileo_ansible_role
+- name: "Cleanup RPM"
+  file:
+    path: '{{ galileo_ansible_role_rpm_path }}/{{ galileo_ansible_role_comm_rpm_file }}'
+    state: absent

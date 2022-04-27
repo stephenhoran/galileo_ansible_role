@@ -1,0 +1,15 @@
+---
+- name: "Validation - galileo_ansible_role_ignore_repo is Boolean"
+  assert:
+    that:
+      - "galileo_ansible_role_ignore_repo is boolean"
+    fail_msg: "galileo_ansible_role_ignore_repo should be yes|no"
+    quiet: yes
+
+- name: "Validation - galileo_ansible_role_comm_rpm_file is set if ignore repo yes"
+  assert:
+    that:
+      - "galileo_ansible_role_comm_rpm_file | length"
+    fail_msg: "galileo_ansible_role_comm_rpm_file should have value defined if ignore repo is yes"
+    quiet: yes
+  when: galileo_ansible_role_ignore_repo
