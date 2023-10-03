@@ -30,4 +30,4 @@ jobs:
       - name: Generate
         uses: skx/github-action-build@master
         with:
-          builder: .github/build
+          builder: .github/build.sh
