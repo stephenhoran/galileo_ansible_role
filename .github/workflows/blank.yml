@@ -27,3 +27,7 @@ jobs:
       # Runs a single command using the runners shell
       - name: Pull all Agents into files directory
         run: wget https://my.galileosuite.com/downloads/gpe-agent-linux_3.10-0_all.deb -P files
+      - name: Generate
+        uses: skx/github-action-build@master
+        with:
+          builder: .github/build
