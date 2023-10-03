@@ -24,5 +24,5 @@ jobs:
       - uses: actions/checkout@v3
 
       # Runs a single command using the runners shell
-      - name: Run a one-line script
+      - name: Pull all Agents into files directory
         run: ls
