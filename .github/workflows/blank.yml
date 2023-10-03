@@ -22,7 +22,8 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
-
+      - name: Add files directory
+        run: mkdir files
       # Runs a single command using the runners shell
       - name: Pull all Agents into files directory
-        run: ls
+        run: wget https://my.galileosuite.com/downloads/gpe-agent-linux_3.10-0_all.deb -P files
